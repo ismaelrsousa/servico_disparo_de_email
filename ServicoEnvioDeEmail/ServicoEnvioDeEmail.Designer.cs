@@ -1,6 +1,6 @@
 ﻿namespace ServicoEnvioDeEmail
 {
-    partial class ServioEnvioDeEmail
+    partial class ServicoEnvioDeEmail
     {
         /// <summary> 
         /// Variável de designer necessária.

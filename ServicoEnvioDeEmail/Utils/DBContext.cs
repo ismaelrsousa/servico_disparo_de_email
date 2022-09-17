@@ -5,14 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SQLite;
+using System.Configuration;
 
 namespace ServicoEnvioDeEmail.Utils
 {
-    internal class BDContext
+    internal class DBContext
     {
         public static SQLiteConnection DBConnection()
         {
-            SQLiteConnection con = new SQLiteConnection("Data Source=D:\\www\\banco");
+            string dbPath = ConfigurationManager.ConnectionStrings["Database"].ConnectionString;
+            SQLiteConnection con = new SQLiteConnection(dbPath);
+
             con.Open();
             return con;
         }

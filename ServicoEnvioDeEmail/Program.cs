@@ -17,7 +17,7 @@ namespace ServicoEnvioDeEmail
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
-                new ServioEnvioDeEmail()
+                new ServicoEnvioDeEmail()
             };
             ServiceBase.Run(ServicesToRun);
         }
